@@ -25,7 +25,7 @@ describe("Unit test for FizzbuzzService", ()=>{
     const explorer = {
         name: "Woopa11",
         githubUsername: "ajolonauta1",
-        score: 3,
+        score: 5,
         mission: "node",
         stacks: [
           "javascript",
