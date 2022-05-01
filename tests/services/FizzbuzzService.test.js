@@ -41,4 +41,24 @@ describe("Unit test for FizzbuzzService", ()=>{
     
     expect(fizzExplorer.trick).toBe("BUZZ")
   });
+  test('3. Validate Fizzbuzz', ()=>{
+    const explorer = {
+        name: "Woopa11",
+        githubUsername: "ajolonauta1",
+        score: 15,
+        mission: "node",
+        stacks: [
+          "javascript",
+          "elixir",
+          "groovy",
+          "reasonML",
+          "elm"
+        ],
+        trick: ""
+      }
+    
+    const fizzExplorer = FizzbuzzService.applyValidationInExplorer(explorer)
+    
+    expect(fizzExplorer.trick).toBe("FIZZBUZZ")
+  });
 })
