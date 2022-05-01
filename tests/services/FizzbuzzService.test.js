@@ -19,7 +19,6 @@ describe("Unit test for FizzbuzzService", ()=>{
     
     const fizzExplorer = FizzbuzzService.applyValidationInExplorer(explorer)
     
-    expect(fizzExplorer).toBe("FIZZ")
+    expect(fizzExplorer.trick).toBe("FIZZ")
   });
-  
 })
