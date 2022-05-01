@@ -143,7 +143,7 @@ describe("Unit test for ExplorerService", ()=>{
     
     const explorersUsernames = ExplorerService.getExplorersUsernamesByMission(explorers, "node")
     
-    expect(explorersUsernames).toBe(["Woopa11", "Woopa12", "Woopa13"])
+    expect(explorersUsernames).toStrictEqual(["ajolonauta11", "ajolonauta12", "ajolonauta13"])
     
   });
 })
