@@ -61,7 +61,7 @@ describe("Unit test for FizzbuzzService", ()=>{
     
     expect(fizzExplorer.trick).toBe("FIZZBUZZ")
   });
-  test('3. Validate any other possibility', ()=>{
+  test('4. Validate any other possibility', ()=>{
     const explorer = {
         name: "Woopa11",
         githubUsername: "ajolonauta1",
