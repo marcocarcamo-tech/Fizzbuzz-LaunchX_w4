@@ -2,12 +2,13 @@ const ExplorerService = require('../../lib/services/ExplorerService')
 
 describe("Unit test for ExplorerService", ()=>{
   test('1. Filter explorers by mission', ()=>{
-    const explorers = [{
-        "name": "Woopa11",
-        "githubUsername": "ajolonauta11",
-        "score": 11,
-        "mission": "node",
-        "stacks": [
+    const explorers = [
+      {
+        name: "Woopa11",
+        githubUsername: "ajolonauta11",
+        score: 11,
+        mission: "node",
+        stacks: [
           "javascript",
           "elixir",
           "groovy",
@@ -16,11 +17,11 @@ describe("Unit test for ExplorerService", ()=>{
         ]
       },
       {
-        "name": "Woopa12",
-        "githubUsername": "ajolonauta12",
-        "score": 12,
-        "mission": "java",
-        "stacks": [
+        name: "Woopa12",
+        githubUsername: "ajolonauta12",
+        score: 12,
+        mission: "node",
+        stacks: [
           "javascript",
           "elixir",
           "groovy",
@@ -29,20 +30,24 @@ describe("Unit test for ExplorerService", ()=>{
         ]
       },
       {
-        "name": "Woopa13",
-        "githubUsername": "ajolonauta13",
-        "score": 13,
-        "mission": "node",
-        "stacks": [
+        name: "Woopa13",
+        githubUsername: "ajolonauta13",
+        score: 13,
+        mission: "node",
+        stacks: [
           "javascript",
           "elixir",
           "groovy",
           "reasonML",
           "elm"
         ]
-      }]
+      }
+    ]
     
     const explorersInNode = ExplorerService.filterByMission(explorers, "node")
-    expect(explorersInNode.forEach(explorer => { explorer.mission})).toBe("node")
+    
+    expect(explorersInNode[0].mission).toBe("node")
+    expect(explorersInNode[1].mission).toBe("node")
+    expect(explorersInNode[2].mission).toBe("node")
   });
 })
