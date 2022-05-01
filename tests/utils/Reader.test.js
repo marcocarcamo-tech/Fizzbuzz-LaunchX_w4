@@ -6,7 +6,7 @@ describe("Unit test for Reader", ()=>{
     expect(data).not.toBe(null)
   });
   test('2. Returns an object', ()=>{
-    const data = Reader.readJsonFile('explorers_2.json')
+    const data = Reader.readJsonFile('explorers.json')
     expect(typeof data).toBe('object')
   });
 })
