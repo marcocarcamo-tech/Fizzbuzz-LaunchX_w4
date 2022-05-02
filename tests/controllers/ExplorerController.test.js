@@ -9,20 +9,20 @@ describe("Unit test for ExplorerController", ()=>{
             "score": 1,
             "mission": "node",
             "stacks": [
-              "javascript",
-              "reasonML",
-              "elm"
+                "javascript",
+                "reasonML",
+                "elm"
             ]
-          });
+        });
     });
     test("2. Get explorers username by mission", ()=>{
-      const explorersByMission = ExplorerController.getExplorersUsernameByMission("node");
+        const explorersByMission = ExplorerController.getExplorersUsernamesByMission("node");
   
-      expect(explorersByMission[0]).toBe("ajolonauta1");
-  });
-  test("3. Get explorers amount by mission", ()=>{
-    const explorersAmountByMission = ExplorerController.getExplorersAmountByMission("node");
+        expect(explorersByMission[0]).toBe("ajolonauta1");
+    });
+    test("3. Get explorers amount by mission", ()=>{
+        const explorersAmountByMission = ExplorerController.getExplorersAmountByMission("node");
 
-    expect(explorersAmountByMission).toBe(10);
-});
+        expect(explorersAmountByMission).toBe(10);
+    });
 });
