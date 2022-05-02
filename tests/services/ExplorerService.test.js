@@ -46,7 +46,7 @@ describe("Unit test for ExplorerService", ()=>{
     
     const explorersInNode = ExplorerService.filterByMission(explorers, "node")
     
-    expect(explorersInNode[0].mission).toBe("nodeSSS")
+    expect(explorersInNode[0].mission).toBe("node")
     expect(explorersInNode[1].mission).toBe("node")
     expect(explorersInNode[2].mission).toBe("node")
   });
