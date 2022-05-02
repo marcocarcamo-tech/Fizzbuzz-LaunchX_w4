@@ -15,5 +15,14 @@ describe("Unit test for ExplorerController", ()=>{
             ]
           });
     });
-   
+    test("2. Get explorers username by mission", ()=>{
+      const explorersByMission = ExplorerController.getExplorersUsernameByMission("node");
+  
+      expect(explorersByMission[0]).toBe("ajolonauta1");
+  });
+  test("3. Get explorers amount by mission", ()=>{
+    const explorersAmountByMission = ExplorerController.getExplorersAmountByMission("node");
+
+    expect(explorersAmountByMission).toBe(10);
+});
 });
