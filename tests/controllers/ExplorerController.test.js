@@ -25,4 +25,13 @@ describe("Unit test for ExplorerController", ()=>{
 
         expect(explorersAmountByMission).toBe(10);
     });
+
+    test("4. Get Fizzbuzz validation with number through Fizzbuzz Service", ()=>{
+        
+    
+        const validationValue = ExplorerService.getFizzbuzzValidationValueByNumber(3);
+    
+        expect(validationValue).toBe("FIZZ");
+    
+    });
 });
