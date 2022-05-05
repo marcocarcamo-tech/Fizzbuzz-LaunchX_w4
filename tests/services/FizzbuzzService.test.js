@@ -81,4 +81,24 @@ describe("Unit test for FizzbuzzService", ()=>{
     
         expect(fizzExplorer.trick).toBe(1);
     });
+
+    test("5. applyValidatonInNumber method test", ()=>{
+        const explorer = {
+            name: "Woopa11",
+            githubUsername: "ajolonauta1",
+            score: 1,
+            mission: "node",
+            stacks: [
+                "javascript",
+                "elixir",
+                "groovy",
+                "reasonML",
+                "elm"
+            ],
+        };
+    
+        const fizzString = FizzbuzzService.applyValidationInNumber(number);
+    
+        expect(fizzString).toBe("1");
+    });
 });
